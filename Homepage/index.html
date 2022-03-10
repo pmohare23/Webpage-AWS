@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<title>Pratik Mohare</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-content" style="max-width:1600px;background-color: #121212;">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3;width:280px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images/profile.jpg" style="width:100%;" class="w3-round"><br><br>
+    <h4><b>PRATIK MOHARE</b></h4>
+    <hr>
+    <br>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>HOME</a> 
+    <a href="#profile" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>PROFILE</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-padding" style="font-size: medium;">
+    <li class="fa fa-linkedin w3-hover-opacity"></li> <a href="https://www.linkedin.com/in/pratik-mohare/" target="_blank">pratik-mohare</a>
+    <br>
+    <li class="fa fa-github w3-hover-opacity"></li> <a href="https://github.com/pmohare23" target="_blank">pmohare23</a>
+  </div>
+
+  <!-- Remove this div after assignment completion-->
+  <div class="w3-padding" style="font-size: medium; color: blanchedalmond;">
+    <a href="https://54.172.3.17/StudentSurveyForm/" target="_blank" class="w3-hover-opacity">Assignment 1B: Feedback form</a><br>
+    <a href="" target="_blank" class="w3-hover-opacity">Assignment 2: </a><br>
+    <a href="" target="_blank" class="w3-hover-opacity">Assignment 3: </a><br>
+    <a href="" target="_blank" class="w3-hover-opacity">Assignment 4: </a><br>
+  </div>
+
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;color:white;background-color:#222222">
+  <!-- Header -->
+  <br>
+  <header id="home">
+    <div class="w3-display-container" style="background-image: url(images/background.jpg); text-align:center; min-height: 250px;">
+        <div class="w3-display-middle w3-padding-large w3-display-container w3-black w3-opacity-min">
+            <h1><b>PRATIK MOHARE</b></h1>
+            <h6><b>Computer Science Grad student,<br>George Mason University</b></h6>
+        </div>
+    </div>
+    <br>
+    <div class="w3-container">
+        <br>
+        <h4><b>About Me</b></h4>
+        <hr>
+        <h6>Pursuing Masters in computer science with experience working on ETL, Data Science and Software Development. 
+            <br>I am looking for a role where I can grow and learn from experienced team members while drawing on project experience I have already successfully executed.
+            <br> Logical problem solving has always appealed to me which explains my interests in brainstorming to find innovative approaches.<br><br>
+            Currently, I am looking for summer 2022 internship opportunities in the areas of Machine Learning and/or Data Science.
+        </h6><br>
+    </div>
+  </header>
+
+  <div class="w3-container" style="margin-bottom:32px" id="profile">
+    <h4><b>Profile</b></h4>
+    <hr>
+    <div class="w3-half">
+        <h3 class="w3-padding-8 w3-text-white">Work Experience</h3>
+        <h5 class="w3-text-white"><b>Senior Systems Engineer, Infosys Ltd</b></h5>
+        <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2017 - Dec 2019</h6>
+        <h6><ul>
+            <li>Strategized and optimized ETL workflows using DataStage and improvised processes with integrated automation scripts.</li>
+            <li>Generated 10-12 ad hoc statistical reports monthly for client using SAP BusinessObjects, BEx-Analyzer and SQL.</li>
+            <li>Led and managed a diverse team of 12 finance and technical individuals, identifying and utilizing the strengths of each member, 
+                while learning and adapting to new and emerging technologies.</li>
+            <li>Identified and troubleshot issues and deployed fixes on production for maintaining compliance.</li>
+        </ul></h6>
+        <br>
+        <h5 class="w3-text-white"><b>Project Intern, Solar Edutech</b></h5>
+        <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2016 - Jul 2016</h6>  
+      </div>
+      <div class="w3-rest">
+        <h3 class="w3-padding-8 w3-text-white">Education</h3>
+        <h5 class="w3-text-white"><b>Masters in Computer Science, George Mason University</b></h5>
+        <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring 2021 - Present</h6>
+        <h6 class="w3-text-white">
+        <ul><li>CS580 - Introduction to Artificial Intelligence</li>
+            <li>CS583 - Analysis of Algorithms</li>
+            <li>CS584 - Data Mining</li>
+            <li>CS657 - Mining Massive Datasets using MapReduce</li>
+            <li>CS551 - Computer Graphics</li>
+            <li>SWE642 - Introduction to World Wide Web</li>
+            <li>CS688 - Machine Learning</li>
+            <li>SWE645 - Component based Software Development</li>
+        </ul></h6>
+        <br><br>
+        <h5 class="w3-text-white"><b>Bachelors of Engineering, Mumbai University</b></h5>
+        <h6 class="w3-text-white"><b>Computer Engineering</b></h6>
+        <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2016</h6>
+      </div>
+    <br>
+      
+    <h4><b>Technical Skills</b></h4>
+    <hr>
+    <!-- Progress bars / Skills -->
+    <p>Data Science</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+    </div>
+    <p>Machine Learning</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">90%</div>
+    </div>
+    <p>Software Development</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">85%</div>
+    </div>
+    <br><br>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section" onclick="window.location.href='Pratik Mohare Resume.pdf'">
+        <i class="fa fa-download"></i> Download Resume </a>
+    </button>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-largey" style="background-color: #3f3f3f;">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>pmohare@gmu.edu</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Fairfax, VA, US 22031</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>+1 571 340 8641</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-black w3-center w3-padding-24 w3-">
+      <div class="fa fa-github"> Github : </div>
+      <a href="https://github.com/pmohare23/Webpage-AWS.git" target="_blank" class="w3-hover-opacity">Project Code</a>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
