@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: studentsurveyform
+  labels:
+    app: studentsurveyform
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: studentsurveyform
+  template:
+    metadata:
+      labels:
+        app: studentsurveyform
+    spec:
+      containers:
+      - name: studentsurveyform
+        image: samriddhidashora/swe645hw2
+        ports:
+        - containerPort: 8080
