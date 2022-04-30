@@ -7,3 +7,5 @@ Created a Dynamic Web Project using Student Survey form (HTML) and an external c
 Deployed on local Tomcat instance, prior to deploying the war file on the Tomcat server running on Amazon EC2 instance in AWS cloud.
 
 Containerized the Web application using Docker. Deployed the containerized application on the open source container orchestration platform Kubernetes to enable scalability and resiliency of the application.
+
+Developed web application using Angular2, RESTful Web Services and JPA/Hibernate along with Amazon Relational Database Service (Amazon RDS)/MySQL to persist and read data to/from a relational database.
