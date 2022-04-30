@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+    ##Requirments##
+o Text boxes for first name, last name, street address, city, state, zip, telephone number, e-mail, and
+date of survey, which are required fields.-->
+<html>
+    <head>
+        <title>Survey</title>
+        <link rel="stylesheet" href="questionnaire.component.css">
+    </head>
+    <body>
+        <p id="intro">Please answer all questions listed below.</p>
+        <div class="col-md-8 offset-md-3">
+        <form (ngSubmit) = "onSubmit()" action="/action_page.php">
+            <div class="form-group">
+                <label for="firstName">First name:</label>
+                <input type="text" id="firstName" name="firstName" class = "form-control"  [(ngModel)] = "student.firstName" required><br><br>
+                   
+                <label for="lastName">Last name:</label>
+                <input type="text" id="lastName" name="lastName" class = "form-control"  [(ngModel)] = "student.lastName" required><br><br>
+            
+                <label for="address">Street Adrress:</label>
+                <input type="text" id="address" name="address" class = "form-control"  [(ngModel)] = "student.address" required><br><br>
+
+                <label for="state">state:</label>
+                <input type="text" id="state" name="state" class = "form-control"  [(ngModel)] = "student.state" required><br><br>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" class = "form-control"  [(ngModel)] = "student.city" required><br><br>
+
+                <!---<label for="state">State:</label>
+                <input type="text" id="state" name="state" class = "form-control"  [(ngModel)] = "student.state" required><br><br>--->
+
+                <label for="zip">Zip:</label>
+                <input type="text" id="zip" name="zip" class = "form-control"  [(ngModel)] = "student.zip" required><br><br>
+            
+                <label for="phone">Telephone Number:</label>
+                <input type="text" id="phone" name="phone" class = "form-control"  [(ngModel)] = "student.phone" required><br><br>
+
+                <label for="email">e-mail:</label>
+                <input type="email" id="email" name="email" class = "form-control"  [(ngModel)] = "student.email" required><br><br>
+
+                <label for="date">Date of Survey:</label>
+                <input type="date" id="date" name="date" class = "form-control"  [(ngModel)] = "student.date" required><br><br>
+            
+                <!-- check boxes for students, location, campus, atmosphere, dorm rooms, and sports.-->
+
+                <h2>What did you like most about campus?</h2>
+
+                <input type="checkbox" id="checkboxes" name="checkboxes" value="students" [checked]="student" (change)="onCheckboxChange($event, 'students')">
+                <label for="students" > students </label><br>
+            
+                <input type="checkbox" id="checkboxes" name="checkboxes" value="location" (change)="onCheckboxChange($event, 'location')">
+                <label for="location" > location</label><br>
+            
+                <input type="checkbox" id="checkboxes" name="checkboxes" value="campus" (change)="onCheckboxChange($event, 'campus')">
+                <label for="campus"> campus</label><br>
+            
+                <input type="checkbox" id="checkboxes" name="checkboxes" value="atmosphere" (change)="onCheckboxChange($event, 'atmosphere')">
+                <label for="atmosphere"> atmosphere</label><br>
+            
+                <input type="checkbox" id="checkboxes" name="checkboxes" value="dorm rooms" (change)="onCheckboxChange($event, 'dorm rooms')">
+                <label for="dorm rooms"> dorm rooms</label><br>
+            
+                <input type="checkbox" id="checkboxes" name="checkboxes" value="sports" (change)="onCheckboxChange($event, 'sports')">
+                <label for="sports"> sports</label><br>
+
+                <!--o Radio buttons that allow the prospective students to indicate how they became interested in the
+                university. Options should include: friends, television, Internet, and other.-->
+                <h2>How did you become interested in GMU?</h2>
+
+                <input type="radio" id="friends" name="friends" value="friends" [(ngModel)] = "student.interested">
+                <label for="friends">friends</label><br>
+
+                <input type="radio" id="television" name="television" value="television" [(ngModel)] = "student.interested">
+                <label for="television">television</label><br>
+
+                <input type="radio" id="Internet" name="Internet" value="Internet" [(ngModel)] = "student.interested">
+                <label for="Internet">Internet</label><br>
+
+                <input type="radio" id="other" name="other" value="other" [(ngModel)] = "student.interested">
+                <label for="other">Other</label><br>
+
+
+                <!--o A dropdown list of options for the user to select the likelihood of him/her recommending this school
+                to other prospective students. The three options of the dropdown list are: Very Likely, Likely,
+                Unlikely.-->
+
+                <label for="likelyhood">How likely are you to recomend this school to other prospective students?</label>
+
+                <select name="likelyhood" id="likelyhood" [(ngModel)] = "student.likely">
+                    <option value="Very_Likely">Very Likely</option>
+                    <option value="Likely">Likely</option>
+                    <option value="Unlikely">Unlikely</option>
+                </select><br>
+
+                <!--o An additional text box called Raffle. The user will be asked to enter at least ten comma separated
+                numbers ranging from 1 through 100 in the Raffle field. This information will be used to announce
+                whether the student wins a free movie ticket.-->
+
+                <label for="raffle">Please enter 10 comma seperated numbers for the raffle:</label>
+                <input type="text" name="raffle" pattern="^[0-9a-zA-z]+(,[0-9a-zA-z]+){1,100}$" title="Please enter 10 comma seperate numbers."> <br>
+
+                <!--o A text area for additional comments, and Submit and cancel buttons-->
+            
+                <label for="comnments">Please leave any additional comments here:</label><br>
+                <textarea id="comnments" name="comnments" rows="4" cols="50" [(ngModel)] = "student.comments"></textarea><br>
+              
+                <button class = "btn btn-success" type = "submit">Submit</button>
+                <button type="reset" value="Reset">Cancel</button>
+            </div>
+        </form>
+    </div>
+    </body>
+</html>

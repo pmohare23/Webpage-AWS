@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: survey-frontend
+  labels:
+    app: survey-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: survey-frontend
+  template:
+    metadata:
+      labels:
+        app: survey-frontend
+    spec:
+      containers:
+      - name: survey-frontend
+        image: samriddhidashora/survey-frontend
+        ports:
+        - containerPort: 8080

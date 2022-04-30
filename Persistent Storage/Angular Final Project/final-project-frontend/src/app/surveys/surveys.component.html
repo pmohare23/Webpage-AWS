@@ -1,0 +1,39 @@
+<div class="container">
+<h3>Below are all surveys</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Zip</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Date</th>
+            <th>What did you like most about campus?</th>
+            <th>How did you become interested in GMU?</th>
+            <th>How likely are you to recomend this school to other prospective students?</th>
+            <th>Comments</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let student of students">
+            <td>{{student.firstName}}</td>
+            <td>{{student.lastName}}</td>
+            <td>{{student.address}}</td>
+            <td>{{student.state}}</td>
+            <td>{{student.city}}</td>
+            <td>{{student.zip}}</td>
+            <td>{{student.phone}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.date}}</td>
+            <td>{{student.liked}}</td>
+            <td>{{student.interested}}</td>
+            <td>{{student.likely}}</td>
+            <td>{{student.comments}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

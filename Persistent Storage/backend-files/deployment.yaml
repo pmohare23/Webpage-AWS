@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: survey-backend
+  labels:
+    app: survey-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: survey-backend
+  template:
+    metadata:
+      labels:
+        app: survey-backend
+    spec:
+      containers:
+      - name: survey-backend
+        image: samriddhidashora/survey-backend
+        ports:
+        - containerPort: 8080
